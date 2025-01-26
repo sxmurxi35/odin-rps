@@ -49,6 +49,14 @@ function playGame() {
       Computer: ${computerScore}
       `);
   }
+
+  if (humanScore > computerScore) {
+    console.log("You won the game!");
+  } else if (humanScore < computerScore) {
+    console.log("You lost the game!");
+  } else {
+    console.log("It's a draw!");
+  }
 }
 
 playGame();
